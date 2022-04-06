@@ -29,5 +29,8 @@ psql -U username -d dbname -1 -f filename.sql
 
 or
 
-pg_restore -U username -d dbname -1 filename.dump
+pg_restore -U username -d dbname -1 filename.dump 
 
+## Lista de comando de terminal DATABASES PSQL
+
+/l listas de databases,
