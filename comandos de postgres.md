@@ -13,6 +13,9 @@
 
 5 para cambiar contraseña:
 ```\password```
+## Crear Basedatos
+
+```CREATE DATABASE nuevadb;```
 ## Habilita el localhost
 
 1.- escribe en la terminal ```sudo nano /etc/postgresql/[version]/main/postgresql.conf``` 
