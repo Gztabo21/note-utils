@@ -11,8 +11,13 @@
 4  crea un nuevo usuario ```createuser --interactive```, colocaras el nombre.
 ```Enter name of role to add: usernew Shall the new role be a superuser? (y/n) y```
 
-5 para cambiar contraseña:
-```\password```
+5 colocar en la termina :
+```psql``` luego dar enter
+
+
+6 para cambiar contraseña:
+```\password <username>```
+
 ## Crear Basedatos
 
 ```CREATE DATABASE nuevadb;```
