@@ -42,3 +42,12 @@ pg_restore -U username -d dbname -1 filename.dump
 ## Lista de comando de terminal DATABASES PSQL
 
 /l listas de databases,
+## Remove _sql_constraints
+you could remove it using psql command. for example if you have the following constraint
+
+_sql_constraints = [
+    ('phone_company_unique', 'unique(type,phone)', 'The phone unique among companies!')
+]
+you could use:
+
+ALTER TABLE res_partner DROP CONSTRAINT res_company_phone_company_unique;
