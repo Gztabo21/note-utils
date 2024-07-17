@@ -90,8 +90,12 @@ sudo -u postgres psql -c "ALTER ROLE odoo SUPERUSER;"
 ## Mostrar el string del select en odoo
 
 En python >
+```
 string_value = dict(self._fields['campo_selection'].selection).get(self.campo_selection))
+```
 
 En qweb >
 
+```
 <t t-esc="dict(docs.fields_get(allfields=['campo_selection'])['campo_selection']['selection'])[docs.campo_selection]"/>
+```
