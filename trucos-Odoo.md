@@ -91,7 +91,7 @@ sudo -u postgres psql -c "ALTER ROLE odoo SUPERUSER;"
 
 En python >
 ```
-string_value = dict(self._fields['campo_selection'].selection).get(self.campo_selection))
+string_value = dict(self._fields['campo_selection'].selection).get(self.campo_selection)
 ```
 
 En qweb >
