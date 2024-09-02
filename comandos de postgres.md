@@ -33,14 +33,14 @@
  psql -U username -d dbname < filename.sql
 
 -- For Postgres versions 9.0 or earlier
-psql -U username -d dbname -1 -f filename.sql
+psql -U username -h localhost -p [port] -d dbname -1 -f filename.sql
 
 or
 
 pg_restore -U username -d dbname -1 filename.dump 
 ## Importar DDBB en postgress
 ```
-psql -U postgres -d [Nombre_Base_De_Datos] < [Nombre_Base_De_Datos].sql
+psql -U postgres -h localhost -p [port] -d [Nombre_Base_De_Datos] < [Nombre_Base_De_Datos].sql
 ```
 ## Lista de comando de terminal DATABASES PSQL
 
